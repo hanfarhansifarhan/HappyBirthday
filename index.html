@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    "
+    class="flex justify-center h-screen items-center"
+  >
+    <div
+      class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-blue-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80"
+      id="kartu"
+    >
+      <!-- Halaman 1 -->
+      <img
+        class="mx-auto mb-4 rounded-lg"
+        src="https://i.postimg.cc/yxfKBkcb/IMG-2041.png"
+        width="200"
+        alt="Foto Saya"
+      />
+      <div class="border-b border-2 border-gray-300 mb-4"></div>
+      <h1 class="text-3xl">Happy Birthday</h1>
+      <h1
+        class="text-4xl text-blue-500 font-bold animate__animated animate__pulse animate__infinite"
+      >
+        Padila Agustiana
+      </h1>
+      <button
+        class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+        onclick="halamanKedua()"
+      >
+        klik di sini sayang
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+
+      let kartu = document.getElementById("kartu");
+
+      function halamanKedua() {
+        kartu.innerHTML = `
+        <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">
+          Halloooo sayanggg, selamat ulang tahun yang ke 18 yaaa🎉🎂, engga kerasa kamu udah sampai di titik ini, perasaan baru kemaren aku masih jemput kamu di depan gerbang sekolah and sekarang udaa lulus aja kamuu, tau gasi kamu katanya usia 18 itu jadi gerbang awal kedewasaan HAHAHHAA,
+          Tapi jujur, dari dulu pun kamu udah kelihatan lebih dewasa pemikiran nya di bandingkan akuu, and yaa sekarang kamu beneran harus lebih dewasa lagi apalagi kamu lagi ngalamin fase awal ngerasain apa itu jadi orang dewasa yang sesungguh nya kan
+        </h1>
+        <h2 class="mt-3 animate__animated animate__fadeIn">
+          - from : Farhan (Pacarmu yang paling ganteng) -
+        </h2>
+        <button
+          class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+          onclick="halamanKetiga()"
+        >
+          Next
+        </button>
+        `;
+      }
+
+      function halamanKetiga() {
+        kartu.innerHTML = `
+        <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">
+          tapi di sisi lain jugaa aku malah kadang masih mikirin hal-hal yang receh, masih mikirin waktu main dan waktu kita berduaam bahkan susah ngertiin kamu mau interview atau gimana, tapii
+          dari hatiku yang paling dalam akuuu doain kamu yang terbaikkkk tauu🥹, aku bener-bener minta maaf buattt itu semua, tapi kalo boleh jujur emang susah rasanya buat ngerelain itu semua
+          bahkan di saat aku buat inipun, masih ada rasa ga bisa relain itu semua, masa masa kita bisa ketemu hampir setiap hari?, masa masa aku sering banget pp purbalingga cilacap demi ketemu kamu, itu semua mau usai ya?🥹🥹🥹
+        </h1>
+        <h2 class="mt-3 animate__animated animate__fadeIn">
+          - Farhan (Pacarmu yang paling ganteng) -
+        </h2>
+        <button
+          class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+          onclick="halamanKeempat()"
+        >
+          Next
+        </button>
+        `;
+      }
+
+      function halamanKeempat() {
+        kartu.innerHTML = `
+        <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">
+          and yaa aku di sini bangga banget sama kamuu, kamu kuat, dan sabar bangettt sama akuu yang pemikiran nya kaya anak kecil, aku mau ngucapin terimakasii buat itu semua, dan di hari yang spesial ini semoga keinginan kamu secepetnya terkabul mulai dari dapet kerja dan 
+          hal yang lain yang kamu inginkann, aku di sini selalu doain kamu yang terbaik sayang😊, terima kasih udah selalu ada, dan semoga aku bisa jadi orang yang  bisa nemenin kamu sekarang maupun kedepan nya ya?, Sekali lagi, selamat ulang tahun sayang. i love you❤️
+
+        </h1>
+        <h2 class="mt-3 animate__animated animate__fadeIn">
+          – Farhan (Pacarmu yang paling ganteng)-
+        </h2>
+        <button
+          class="p-2 bg-slate-600 text-white rounded mt-5 hover:bg-slate-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+          onclick="refresh()"
+        >
+          Tutup
+        </button>
+        `;
+      }
+
+      function refresh() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
